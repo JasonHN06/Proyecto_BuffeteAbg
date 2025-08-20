@@ -1,7 +1,12 @@
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 h2#testimonios {
     scroll-margin-top: 80px; /* Ajustar la altura según el navbar */
 }
-
 
 .carousel-control-prev i, .carousel-control-next i {
     position: absolute;
@@ -12,11 +17,11 @@ h2#testimonios {
 }
 
 .carousel-control-prev i {
-    left: -50px; /* Alejar o acercar flechas */
+    left: -35px; /* Alejar o acercar flechas */
 }
 
 .carousel-control-next i {
-    right: -40px;
+    right: -35px;
 }
 
 /* Testimonios */
