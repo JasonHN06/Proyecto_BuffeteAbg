@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(0, 0, 0);">
+        <div class="container-fluid">
+        <img src="img/logo-navbar.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="#">Bufete Legal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="extrasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Extras
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="extrasDropdown">
+                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                    <li><a class="dropdown-item" href="misionvision.html">Misión y visión</a></li>
+                    <li><a class="dropdown-item" href="preguntas.html">Preguntas frecuentes</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+        <div class="container mt-5">
+            <div class="hero-content text-center">
+                <h1 class="display-4 fw-bold mb-4 p-1">Contáctanos</h1>
+                <p class="lead mb-4 bg-dark bg-opacity-50 rounded p-1 fw-bold">Estamos aquí para defender lo que más importa, tus derechos. Con atención personalizada desde el primer contacto y transparencia en cada proceso. Contando con un equipo de expertos listos para ayudarte en tus necesidades legales.</p>
+                <a href="#formulario" class="btn btn-nosotros btn-lg">
+                    <i class="fas fa-arrow-down me-2"></i>
+                    Llenar formulario
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ubicacion -->
+    <section id="contacto-info" class="container my-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-primary">Ubicación</h2>
+            <p class="text-muted">Estamos disponibles para atender tu consulta legal con profesionalismo y compromiso.</p>
+        </div>
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9 rounded border">
+                    <iframe src="https://www.google.com/maps?q=El+Progreso,+Yoro,+Honduras&output=embed" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled fs-5">
+                    <li class="mb-3">
+                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                    <strong>Dirección:</strong> Bo. Los Angeles, El Progreso, Yoro, Honduras
+                    </li>
+                    <li class="mb-3">
+                    <i class="fas fa-phone-alt text-primary me-2"></i>
+                    <strong>Teléfono:</strong> +504 9988-7766 / +504 9889-7667
+                    </li>
+                    <li class="mb-3">
+                    <i class="fas fa-envelope text-primary me-2"></i>
+                    <strong>Email:</strong> example@gmail.com
+                    </li>
+                    <li>
+                    <i class="fas fa-clock text-primary me-2"></i>
+                    <strong>Horario:</strong> Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Banner-->
+    <!-- <section class="container_banner">
+        <div class="row">
+            <div class="banner animated tada">
+                <div class=" big-text animated tada">Bufete Legal</div>
+                <div>Los mejores servicios legales</div>
+                <a href="#">Ver servicios</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Formulario -->
+    <div id="formulario" class="row justify-content-center mb-5">
+        <div class="col-lg-8 col-md-10 my-4 p-4 shadow-sm rounded formulario-contacto">
+            <h3 class="section-title text-center mb-5">Envíanos un Mensaje</h3>
+            <div id="alertContainer"></div>
+            <form id="contactForm">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                    <label for="nombre" class="form-label fw-bold">
+                        <i class="fas fa-user me-1"></i>Nombre Completo *
+                    </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                    <label for="email" class="form-label fw-bold">
+                        <i class="fas fa-envelope me-1"></i>Email *
+                    </label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-md-6">
+                    <label for="telefono" class="form-label fw-bold">
+                        <i class="fas fa-phone me-1"></i>Teléfono
+                    </label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="areaLegal" class="form-label fw-bold">
+                        <i class="fas fa-gavel me-1"></i>Área Legal
+                    </label>
+                    <select class="form-control" id="areaLegal" name="areaLegal">
+                        <option value="">Selecciona un área</option>
+                        <option value="civil">Derecho Civil</option>
+                        <option value="penal">Derecho Penal</option>
+                        <option value="laboral">Derecho Laboral</option>
+                        <option value="mercantil">Derecho Mercantil</option>
+                        <option value="familiar">Derecho de Familia</option>
+                        <option value="inmobiliario">Derecho Inmobiliario</option>
+                        <option value="tributario">Derecho Tributario</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    </div>
+                    <div class="col-12">
+                    <label for="asunto" class="form-label fw-bold">
+                        <i class="fas fa-tag me-1"></i>Asunto *
+                    </label>
+                    <input type="text" class="form-control" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="col-12">
+                    <label for="mensaje" class="form-label fw-bold">
+                        <i class="fas fa-comment me-1"></i>Mensaje *
+                    </label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Describe tu consulta legal..." required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="privacidad" required>
+                            <label class="form-check-label" for="privacidad">
+                            Acepto la <a href="#" class="text-decoration-none">política de privacidad</a>
+                            y el tratamiento de mis datos personales *
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">
+                        <i class="fas fa-paper-plane me-2"></i>Enviar Consulta
+                    </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <section class="full-banner marcas-patrocinadoras text-center py-5">
+        <!-- <h4 class="text-light fw-bold mb-4">Instituciones que respaldan nuestra labor</h4> -->
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-4">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img src="img/contacto/marcas-asociadas/logo1.jpg" alt="Marca asociada 1" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+                <img src="img/contacto/marcas-asociadas/logo2.jpg" alt="Marca asociada 2" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+                <img src="img/contacto/marcas-asociadas/logo3.jpg" alt="Marca asociada 3" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+                <img src="img/contacto/marcas-asociadas/logo4.jpg" alt="Marca asociada 4" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+                <img src="img/contacto/marcas-asociadas/logo5.jpg" alt="Marca asociada 5" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+                <img src="img/contacto/marcas-asociadas/logo6.jpg" alt="Marca asociada 6" class="img-fluid rounded shadow-sm">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sedes -->
+    <section class="container my-5" id="localizaciones">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-primary">Nuestras Localizaciones</h2>
+            <p class="text-muted">Conoce dónde puedes encontrarnos y en qué horarios te atendemos.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Sede 1 -->
+            <div class="col-md-6">
+            <div class="card h-100 shadow-sm local-card">
+                <img src="img/contacto/img-sede-1.jpg" class="card-img-top" alt="Sede El Progreso">
+                <div class="card-body">
+                <h5 class="card-title text-primary">El Progreso, Yoro</h5>
+                <p class="card-text">
+                    <i class="fas fa-map-marker-alt me-2 text-secondary"></i> Bo. Los Ángeles, frente a Plaza Jurídica<br>
+                    <i class="fas fa-clock me-2 text-secondary"></i> Lun - Vie: 8:00 AM - 5:00 PM
+                </p>
+                </div>
+            </div>
+            </div>
+            <!-- Sede 2 -->
+            <div class="col-md-6">
+            <div class="card h-100 shadow-sm local-card">
+                <img src="img/contacto/img-sede-2.jpg" class="card-img-top" alt="Sede San Pedro Sula">
+                <div class="card-body">
+                <h5 class="card-title text-primary">San Pedro Sula, Cortés</h5>
+                <p class="card-text">
+                    <i class="fas fa-map-marker-alt me-2 text-secondary"></i> 12 Calle NE, Frente a Plaza del Sol<br>
+                    <i class="fas fa-clock me-2 text-secondary"></i> Lun - Vie: 9:00 AM - 5:30 PM
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #000000">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Bufete Legal
+                    </h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit nulla culpa veritatis consequuntur illo libero voluptates consectetur iure totam, delectus esse ducimus.</p>
+                </div>
+                <hr class="w-100 clearfix d-md-none"/>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Secciones</h6>
+                    <p><a class="text-white text-decoration-none" href="nosotros.html">Nosotros</a></p>
+                    <p><a class="text-white text-decoration-none" href="servicios.html">Servicios</a></p>
+                    <p><a class="text-white text-decoration-none" href="testimonios.html">Testimonios</a></p>
+                    <p><a class="text-white text-decoration-none" href="contacto.html">Contacto</a></p>
+                </div>
+                <hr class="w-100 clearfix d-md-none" />
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Extras</h6>
+                    <p><a class="text-white text-decoration-none" href="blog.html">Blog</a></p>
+                    <p><a class="text-white text-decoration-none" href="misionvision.html">Misión y visión</a></p>
+                    <p><a class="text-white text-decoration-none" href="preguntas.html">Preguntas frecuentes</a></p>
+                    <p><a class="text-white text-decoration-none" href="ayuda.html">Ayuda</a></p>
+                </div>
+                <hr class="w-100 clearfix d-md-none" />
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                    <p><i class="fas fa-home mr-3"></i> El Progreso, Yoro.</p>
+                    <p><i class="fas fa-envelope mr-3"></i> example@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +504 9988-7766</p>
+                    <p><i class="fas fa-phone mr-3"></i> +504 9889-7667</p>
+                </div>
+                </div>
+            </section>
+            <hr class="my-3">
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <div class="p-3">© 2025 Copyright:
+                        <a class="text-white" href="#">Jason Madrid</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" ><i class="fab fa-facebook-f"></i ></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" ><i class="fab fa-twitter"></i ></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" ><i class="fab fa-google"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" ><i class="fab fa-instagram"></i ></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+h2#testimonios {
+    scroll-margin-top: 80px; /* Ajustar la altura según el navbar */
+}
+
+
+.carousel-control-prev i, .carousel-control-next i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.carousel-control-prev i {
+    left: -50px; /* Alejar o acercar flechas */
+}
+
+.carousel-control-next i {
+    right: -40px;
+}
+
+/* Testimonios */
+.card {
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.blockquote {
+    font-style: italic;
+    color: #2c3e50;
+}
+.blockquote-footer {
+    font-weight: 500;
+    color: #6c757d;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+section h2 {
+    font-size: 1.5rem;
+}
+.testimonial-text {
+    font-size: 0.95rem;
+}
+}
+
+/* Imagen de bienvenida */
+.hero-section {
+    background-image: url(../img/testimonios/img-testimonios-inicio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.btn-servicios {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-servicios:hover {
+    background-color: #002853;
+    border-color: #002853;
+}

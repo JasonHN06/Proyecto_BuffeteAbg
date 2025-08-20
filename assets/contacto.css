@@ -1,0 +1,231 @@
+/* Aplica a todo el cuerpo y HTML */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Imagen de bienvenida */
+.hero-section {
+    background-image: url(../img/contacto/img-contacto-inicio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.btn-nosotros {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-nosotros:hover {
+    background-color: #002853;
+    border-color: #002853;
+}
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Ubicacion */
+section h2 {
+    font-size: 2rem;
+}
+section i {
+    opacity: 0.9;
+}
+.btn-lg {
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+}
+#contacto-info i {
+    font-size: 1.2rem;
+}
+.ratio iframe {
+    border-radius: 8px;
+}
+
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #003566;
+    --text-dark: #2d3748;
+    --text-light: #718096;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+#formulario {
+    scroll-margin-top: 40px;
+}
+.contact-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color), #2c5282);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.contact-info-item {
+    padding: 1rem;
+    border-left: 4px solid var(--accent-color);
+    background: #f8fafc;
+    margin-bottom: 1rem;
+    border-radius: 0 10px 10px 0;
+}
+.section-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+.alert-success {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    .contact-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/*Banner*/
+.container_banner {
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.big-text {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.container_banner a {
+    display: inline-block;
+    background: #fff;
+    color: #36465d;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+.container_banner a:hover {
+    background: #6da0fd;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Marcas */
+.full-banner {
+    width: 100%;
+    background-color: #f8f8f8; /* Azul institucional o legal */
+    color: #ffffff;
+}
+.marcas-patrocinadoras img {
+    max-height: 80px;
+    object-fit: contain;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.marcas-patrocinadoras img:hover {
+    transform: scale(1.05);
+}
+
+/* Sedes */
+.local-card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+.local-card .card-body {
+    padding-top: 15px;
+}
+.local-card:hover {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,95 @@
+
+
+/* Carousel */
+.carousel-img {
+  height: 600px;      
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+    .carousel-img {
+        height: 300px;
+    }
+}
+
+
+
+/* Sobre Nosotros */
+.about {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(https://usap.edu/2024/wp-content/uploads/2024/08/legal-books-happy-portrait-and-man-research-law-f-2023-11-27-05-31-43-utc-1-scaled.jpg) left center no-repeat;
+    background-size: cover;
+}
+
+
+/* Servicios */
+.btn-contacto{
+  background-color: white;
+}
+.btn-contacto:hover{
+  background-color: rgb(228, 228, 228);
+}
+.contactButton {
+  background: #000000;
+  color: white;
+  font-family: inherit;
+  padding: 0.45em;
+  padding-left: 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #2e2d2e;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3em;
+}
+
+.iconButton {
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #2e2d2e;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.contactButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #2e2d2e;
+}
+
+.contactButton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em #2e2d2e;
+}
+
+
+/* Testimonios */
+.testimonial-box {
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+  border-left: 5px solid #0d6efd;
+}
+.testimonial-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Seccion contacto */
+.effect-parallax {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url('../img/parallax-contactanos.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
