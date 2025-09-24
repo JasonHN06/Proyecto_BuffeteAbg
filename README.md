@@ -42,7 +42,12 @@ El diseño contempla buenas prácticas de accesibilidad:
 
 El sitio se encuentra en desarrollo activo. Aún se están integrando funcionalidades con JavaScript, animaciones progresivas y mejoras en modularidad. Sin embargo, ya cuenta con una base sólida y una estructura visual coherente con el estilo institucional.
 
+## • Desarrollado por **JasonHN06**
+https://github.com/JasonHN06
+
 ## • Cómo clonar el proyecto
 
 ```bash
 git clone https://github.com/usuario/nombre-repositorio.git
+
+
